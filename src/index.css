@@ -61,3 +61,20 @@ nav a {
   font-weight: bold;
   color: black;
 }
+.new-destination {
+  background-color: bisque;
+}
+.new-destination-form {
+  width: 300px;
+  margin: 0 auto;
+  background-color: beige;
+  border: 1px solid black;
+  height: 400px;
+  border-radius: 10px;
+}
+.input {
+  margin-top: 50px;
+}
+.btn {
+  margin-top: 50px;
+}
