@@ -3,6 +3,7 @@ import "./App.css";
 import NewDestinationForm from "./components/NewDestinationForm";
 import Destinations from "./components/Destinations";
 import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [destinations, setDestinations] = useState([]);
@@ -17,9 +18,21 @@ function App() {
   }
   return (
     <div className="App">
-      <Home />
-      <Destinations destinations={destinations} />
-      <NewDestinationForm handleAddDestination={handleAddDestination} />
+      <main className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/destinations"
+            element={<Destinations destinations={destinations} />}
+          />
+          <Route
+            path="/new-destination"
+            element={
+              <NewDestinationForm handleAddDestination={handleAddDestination} />
+            }
+          />
+        </Routes>
+      </main>
     </div>
   );
 }
