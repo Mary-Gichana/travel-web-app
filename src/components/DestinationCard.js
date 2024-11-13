@@ -12,7 +12,15 @@ function DestinationCard({ name, image, description }) {
       <img src={image} alt={name} />
       <h4>{name}</h4>
       <p>{description}</p>
-      <button className="btn-1"></button>
+      {visited ? (
+        <button className="btn-1" onClick={handleToggle}>
+          visited
+        </button>
+      ) : (
+        <button className="btn-1" onClick={handleToggle}>
+          Not visited
+        </button>
+      )}
     </li>
   );
 }
