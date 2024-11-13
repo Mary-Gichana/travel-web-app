@@ -16,6 +16,7 @@ function App() {
   function handleAddDestination(newDestination) {
     setDestinations([...destinations, newDestination]);
   }
+  function handleDeleteDestination(id) {}
   return (
     <div className="App">
       <main className="content">
