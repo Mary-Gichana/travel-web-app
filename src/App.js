@@ -16,7 +16,17 @@ function App() {
   function handleAddDestination(newDestination) {
     setDestinations([...destinations, newDestination]);
   }
-  function handleDeleteDestination(id) {}
+  function handleDeleteDestination(id) {
+    fetch(`http://localhost:3000/destinations/${id}`, {
+      method: "DELETE",
+    })
+      .then(() => {
+        setDestinations(
+          destinations.filter((destination) => destination.id === id)
+        );
+      })
+      .catch((error) => console.error(error));
+  }
   return (
     <div className="App">
       <main className="content">
@@ -29,7 +39,10 @@ function App() {
           <Route
             path="/new-destination"
             element={
-              <NewDestinationForm handleAddDestination={handleAddDestination} />
+              <NewDestinationForm
+                handleAddDestination={handleAddDestination}
+                handleDeleteDestination={handleDeleteDestination}
+              />
             }
           />
         </Routes>
