@@ -6,7 +6,12 @@ function NewDestinationForm({ handleAddDestination }) {
     image: "",
     description: "",
   });
-  return <div>NewDestinationForm</div>;
+
+  return (
+    <div className="new-destination-form">
+      <h2>New Destiation</h2>
+    </div>
+  );
 }
 
 export default NewDestinationForm;
