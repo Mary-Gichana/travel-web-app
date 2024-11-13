@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function DestinationCard() {
-  return <div>DestinationCard</div>;
+  const [visited, setVisited] = useState(true);
+
+  return <li></li>;
 }
 
 export default DestinationCard;
