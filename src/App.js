@@ -22,7 +22,7 @@ function App() {
     })
       .then(() => {
         setDestinations(
-          destinations.filter((destination) => destination.id === id)
+          destinations.filter((destination) => destination.id !== id)
         );
       })
       .catch((error) => console.error(error));
@@ -34,15 +34,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route
             path="/destinations"
-            element={<Destinations destinations={destinations} />}
+            element={
+              <Destinations
+                destinations={destinations}
+                handleDeleteDestination={handleDeleteDestination}
+              />
+            }
           />
           <Route
             path="/new-destination"
             element={
-              <NewDestinationForm
-                handleAddDestination={handleAddDestination}
-                handleDeleteDestination={handleDeleteDestination}
-              />
+              <NewDestinationForm handleAddDestination={handleAddDestination} />
             }
           />
         </Routes>

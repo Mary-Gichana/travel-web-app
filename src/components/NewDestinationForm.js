@@ -29,31 +29,44 @@ function NewDestinationForm({ handleAddDestination }) {
   }
 
   return (
-    <div className="new-destination-form">
+    <div className="new-destination">
       <h2>New Destination</h2>
-      <form>
-        <input
-          type="text"
-          name="name"
-          placeholder="Destination name"
-          value={newDestinationData.name}
-          onChange={handleInputChange}
-        />
-        <input
-          type="text"
-          name="image"
-          placeholder="Image URL"
-          value={newDestinationData.image}
-          onChange={handleInputChange}
-        />
-        <input
-          type="text"
-          name="description"
-          placeholder="description"
-          value={newDestinationData.description}
-          onChange={handleInputChange}
-        />
-      </form>
+
+      <div className="new-destination-form">
+        <form onSubmit={handleFormSubmit}>
+          <h3>Add New Destination</h3>
+          <input
+            className="input"
+            type="text"
+            name="name"
+            placeholder="Destination name"
+            value={newDestinationData.name}
+            onChange={handleInputChange}
+          />
+          <br />
+          <input
+            className="input"
+            type="text"
+            name="image"
+            placeholder="Image URL"
+            value={newDestinationData.image}
+            onChange={handleInputChange}
+          />
+          <br />
+          <input
+            className="input"
+            type="text"
+            name="description"
+            placeholder="Description"
+            value={newDestinationData.description}
+            onChange={handleInputChange}
+          />
+          <br />
+          <button className="btn" type="submit">
+            Add Destination
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

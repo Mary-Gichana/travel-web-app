@@ -7,6 +7,10 @@ function Home() {
       <Header />
       <main>
         <p>Welcome To The Travel App </p>
+        <p>
+          Explore beautiful destinations around the world. Start your journey
+          today!
+        </p>
       </main>
     </div>
   );

@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 
-function DestinationCard({ name, image, description }) {
+function DestinationCard({
+  id,
+  name,
+  image,
+  description,
+  handleDeleteDestination,
+}) {
   const [visited, setVisited] = useState(true);
 
   function handleToggle() {
     setVisited(!visited);
+  }
+  function handleDelete() {
+    handleDeleteDestination(id);
   }
 
   return (
@@ -21,7 +30,9 @@ function DestinationCard({ name, image, description }) {
           Not visited
         </button>
       )}
-      <button className="delete-button">Delete</button>
+      <button className="delete-button" onClick={handleDelete}>
+        Delete
+      </button>
     </li>
   );
 }

@@ -61,20 +61,37 @@ nav a {
   font-weight: bold;
   color: black;
 }
-.new-destination {
-  background-color: bisque;
-}
+
 .new-destination-form {
   width: 300px;
   margin: 0 auto;
   background-color: beige;
   border: 1px solid black;
-  height: 400px;
+  height: 450px;
   border-radius: 10px;
+}
+.new-destination-form h3 {
+  padding-top: 20px;
 }
 .input {
   margin-top: 50px;
+  border-radius: 10px;
+  padding: 8px;
+  width: 200px;
+}
+.input textarea {
+  color: navy;
 }
 .btn {
   margin-top: 50px;
+  margin-bottom: 20px;
+  color: blueviolet;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: blueviolet;
+  color: white;
 }
