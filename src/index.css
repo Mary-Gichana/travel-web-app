@@ -12,12 +12,13 @@ code {
     monospace;
 }
 .Home {
-  background-image: url(https://t3.ftcdn.net/jpg/03/34/77/78/360_F_334777839_Y7Y5P8FFY5WFo7sTwjeT0vxDbTGxhIo5.jpg);
-  width: 1000px;
+  background-image: url(https://media.gettyimages.com/id/927781128/photo/straw-beach-umbrellas-and-blue-ocean-beach-scene-from-above.jpg?s=612x612&w=gi&k=20&c=0e6dF8QYx0JY_4ldBEVp1jbaH-XN48D3cSjFsYhrPac=);
+
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 ul {
@@ -28,7 +29,7 @@ ul li {
   list-style: none;
 }
 img {
-  width: 200px;
+  width: 250px;
   height: 200px;
 }
 .cards {
@@ -44,4 +45,19 @@ img {
   width: 250px;
   height: 350px;
   background-color: beige;
+}
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+nav a {
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: black;
 }
