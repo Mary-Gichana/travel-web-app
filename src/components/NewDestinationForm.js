@@ -9,7 +9,12 @@ function NewDestinationForm({ handleAddDestination }) {
 
   return (
     <div className="new-destination-form">
-      <h2>New Destiation</h2>
+      <h2>New Destination</h2>
+      <form>
+        <input />
+        <input />
+        <input />
+      </form>
     </div>
   );
 }
