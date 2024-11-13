@@ -11,6 +11,9 @@ function NewDestinationForm({ handleAddDestination }) {
     const { name, value } = e.target;
     setnewDestination({ ...newDestination, [name]: value });
   }
+  function handleFormSubmit(e) {
+    e.preventDefault();
+  }
 
   return (
     <div className="new-destination-form">
