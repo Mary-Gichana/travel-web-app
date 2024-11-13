@@ -1,9 +1,13 @@
 import React from "react";
+import Header from "./Header";
 
 function Home() {
   return (
     <div className="Home">
-      <p>Welcome To The Travel App </p>
+      <Header />
+      <main>
+        <p>Welcome To The Travel App </p>
+      </main>
     </div>
   );
 }
