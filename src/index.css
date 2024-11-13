@@ -12,7 +12,36 @@ code {
     monospace;
 }
 .Home {
-  background-color: bisque;
-  min-width: 100vh;
+  background-image: url(https://t3.ftcdn.net/jpg/03/34/77/78/360_F_334777839_Y7Y5P8FFY5WFo7sTwjeT0vxDbTGxhIo5.jpg);
+  width: 1000px;
   min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  list-style: none;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 350px;
+  background-color: beige;
 }
