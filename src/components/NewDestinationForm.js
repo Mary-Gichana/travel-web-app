@@ -13,6 +13,11 @@ function NewDestinationForm({ handleAddDestination }) {
   }
   function handleFormSubmit(e) {
     e.preventDefault();
+    fetch("http://localhost:3000/destinations", {
+      method: "POST",
+      headers: { "Content-Type": "Application/JSON" },
+      body: JSON.stringify(newDestination),
+    });
   }
 
   return (
