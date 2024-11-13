@@ -21,6 +21,7 @@ function DestinationCard({ name, image, description }) {
           Not visited
         </button>
       )}
+      <button className="delete-button">Delete</button>
     </li>
   );
 }
