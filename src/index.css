@@ -14,7 +14,7 @@ code {
     monospace;
 }
 .Home {
-  background-image: url(https://cdn.pixabay.com/photo/2015/11/06/13/53/sea-1027999_1280.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/14/20/42/palma-3226352_1280.jpg);
 
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -48,6 +48,9 @@ img {
   height: 350px;
   background-color: beige;
 }
+.card p {
+  color: black;
+}
 nav {
   height: 50px;
   display: flex;
@@ -67,18 +70,24 @@ nav a {
   padding-right: 30px;
 }
 nav a:hover {
-  background-color: aqua;
+  background-color: navy;
   border-radius: 10px;
+  color: white;
+}
+main h1 {
+  color: white;
 }
 main p {
   text-align: center;
   font-size: medium;
+  color: white;
 }
 .logo {
   padding-left: 20px;
   padding-right: 450px;
   font-style: italic;
   font-weight: bold;
+  color: black;
 }
 .new-destination {
   background-image: URL(https://cdn.pixabay.com/photo/2018/03/14/21/45/sunset-3226467_1280.jpg);
@@ -87,6 +96,7 @@ main p {
   background-size: cover;
   background-position: center;
 }
+
 .new-destination-form {
   width: 300px;
   margin: 0 auto;
