@@ -57,11 +57,12 @@ img {
   margin-bottom: 20px;
 }
 .container {
-  background-color: bisque;
+  background-image: url(https://cdn.pixabay.com/photo/2024/01/03/17/53/sunset-8485916_1280.jpg);
 }
 .container h2 {
   margin-bottom: 30px;
   padding-top: 20px;
+  color: black;
 }
 nav {
   height: 50px;
@@ -95,10 +96,11 @@ main p {
   font-size: medium;
   color: white;
   margin-top: 20px;
+  align-content: center;
 }
 .logo {
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 450px;
   font-style: italic;
   font-weight: bold;
