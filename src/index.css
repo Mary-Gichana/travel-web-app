@@ -133,9 +133,18 @@ main p {
   border-radius: 5px;
   padding: 5px 20px;
 }
+.btn-1:hover {
+  color: navy;
+  background-color: white;
+}
+
 .delete-button {
   background-color: white;
   color: navy;
   border-radius: 5px;
   padding: 5px 20px;
+}
+.delete-button:hover {
+  color: white;
+  background-color: orangered;
 }
