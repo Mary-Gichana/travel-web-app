@@ -52,7 +52,7 @@ nav {
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
@@ -63,14 +63,25 @@ nav a {
   padding-bottom: 5px;
   font-weight: bold;
   color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+nav a:hover {
+  background-color: aqua;
 }
 main p {
   text-align: center;
   font-size: medium;
 }
+.logo {
+  padding-left: 20px;
+  padding-right: 450px;
+  font-style: italic;
+  font-weight: bold;
+}
 .new-destination {
   background-image: URL(https://cdn.pixabay.com/photo/2018/03/14/21/45/sunset-3226467_1280.jpg);
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
