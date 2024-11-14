@@ -68,6 +68,7 @@ nav a {
 }
 nav a:hover {
   background-color: aqua;
+  border-radius: 10px;
 }
 main p {
   text-align: center;
@@ -107,13 +108,24 @@ main p {
 .btn {
   margin-top: 50px;
   margin-bottom: 20px;
-  color: blueviolet;
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
 }
 .btn:hover {
-  background-color: blueviolet;
+  background-color: navy;
   color: white;
+}
+.btn-1 {
+  background-color: navy;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+.delete-button {
+  background-color: white;
+  color: navy;
+  border-radius: 5px;
+  padding: 5px 20px;
 }
