@@ -7,8 +7,7 @@ function NewDestinationForm({ handleAddDestination }) {
     description: "",
   });
   function handleInputChange(e) {
-    const { name, value } = e.target;
-    setnewDestinationData({ ...newDestinationData, [name]: value });
+    setnewDestinationData(e.target.value);
   }
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -24,7 +23,7 @@ function NewDestinationForm({ handleAddDestination }) {
           name: "",
           image: "",
           description: "",
-        });
+        }).catch((error) => console.error(error));
       });
   }
 
