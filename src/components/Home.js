@@ -6,10 +6,13 @@ function Home() {
     <div className="Home">
       <Header />
       <main>
-        <p>Welcome To The Travel App </p>
+        <h1>Welcome To The Travel App</h1>
         <p>
           Explore beautiful destinations around the world. Start your journey
-          today!
+          today!.With this App you can be able to view and keep track of the
+          destinations that you have visited and those you have not visited,You
+          can delete a destination from the destination list and also add a new
+          destination.
         </p>
       </main>
     </div>
