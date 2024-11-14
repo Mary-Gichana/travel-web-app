@@ -53,25 +53,25 @@ If you want to run the project locally, you'll need:
    npm start
    Open your browser and visit http://localhost:3000
 
-# Technology Used
+## Technology Used
 
 - React JS
 - JSON Server (for RESTful API)
 - CSS
 
-# Related Repositories
+## Related Repositories
 
 ## Backend API
 
 - Repository:
 - Deployed API:
 
-# Support and Contact Details
+## Support and Contact Details
 
 If you have any questions, suggestions, or need assistance, please contact:
 
 - Email: marygichana95@gmail.com
 
-# License
+## License
 
 MIT License
