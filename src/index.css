@@ -123,6 +123,9 @@ main p {
   height: 450px;
   border-radius: 10px;
 }
+.new-destination-form h3 {
+  padding-top: 20px;
+}
 
 .input {
   margin-top: 50px;
