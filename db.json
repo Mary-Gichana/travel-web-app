@@ -31,9 +31,15 @@
       "description": "Scenic drives and beautiful beaches"
     },
     {
-      "id": "c48f",
+      "id": "3e47",
+      "name": "NewYork,USA",
+      "image": "https://cdn.pixabay.com/photo/2018/12/14/21/29/sunset-3875817_1280.jpg",
+      "description": "Magnificent skyscrapers"
+    },
+    {
+      "id": "821e",
       "name": "Maldives,SouthWest India",
-      "image": "https://images.pexels.com/photos/1450354/pexels-photo-1450354.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "image": "https://cdn.pixabay.com/photo/2016/10/25/12/20/maldives-1768714_1280.jpg",
       "description": "Wide Spectrum of marine Life"
     }
   ]
