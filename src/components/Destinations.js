@@ -13,6 +13,7 @@ function Destinations({ destinations, handleDeleteDestination }) {
             name={destination.name}
             image={destination.image}
             description={destination.description}
+            visited={destination.visited}
             handleDeleteDestination={handleDeleteDestination}
           />
         ))}
