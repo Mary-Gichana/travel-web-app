@@ -110,6 +110,10 @@ main p {
   background-size: cover;
   background-position: center;
 }
+.new-destination h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
 
 .new-destination-form {
   width: 300px;
