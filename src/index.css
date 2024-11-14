@@ -97,6 +97,7 @@ main p {
   margin-top: 20px;
 }
 .logo {
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 450px;
   font-style: italic;
