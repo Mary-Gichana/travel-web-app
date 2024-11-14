@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -12,7 +14,7 @@ code {
     monospace;
 }
 .Home {
-  background-image: url(https://media.gettyimages.com/id/927781128/photo/straw-beach-umbrellas-and-blue-ocean-beach-scene-from-above.jpg?s=612x612&w=gi&k=20&c=0e6dF8QYx0JY_4ldBEVp1jbaH-XN48D3cSjFsYhrPac=);
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/06/13/53/sea-1027999_1280.jpg);
 
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -66,7 +68,13 @@ main p {
   text-align: center;
   font-size: medium;
 }
-
+.new-destination {
+  background-image: URL(https://cdn.pixabay.com/photo/2018/03/14/21/45/sunset-3226467_1280.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .new-destination-form {
   width: 300px;
   margin: 0 auto;
@@ -75,9 +83,7 @@ main p {
   height: 450px;
   border-radius: 10px;
 }
-.new-destination-form h3 {
-  padding-top: 20px;
-}
+
 .input {
   margin-top: 50px;
   border-radius: 10px;
