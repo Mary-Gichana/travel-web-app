@@ -6,12 +6,23 @@ function DestinationCard({
   image,
   description,
   handleDeleteDestination,
+  visited,
 }) {
-  const [visited, setVisited] = useState(false);
+  const [userVisited, setUserVisited] = useState(visited);
 
-  function handleToggle() {
-    setVisited(!visited);
+  function handleUpdateToggle() {
+    const updatedVisited = !userVisited;
+    setUserVisited(updatedVisited);
+
+    fetch("http://localhost:3000/destinations", {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ visited: updatedVisited }),
+    });
   }
+
   function handleDelete() {
     handleDeleteDestination(id);
   }
@@ -22,11 +33,11 @@ function DestinationCard({
       <h4>{name}</h4>
       <p>{description}</p>
       {visited ? (
-        <button className="btn-1" onClick={handleToggle}>
+        <button className="btn-1" onClick={handleUpdateToggle}>
           Visited
         </button>
       ) : (
-        <button className="btn-1" onClick={handleToggle}>
+        <button className="btn-1" onClick={handleUpdateToggle}>
           Not visited
         </button>
       )}
