@@ -7,7 +7,7 @@ function DestinationCard({
   description,
   handleDeleteDestination,
 }) {
-  const [visited, setVisited] = useState(true);
+  const [visited, setVisited] = useState(false);
 
   function handleToggle() {
     setVisited(!visited);
@@ -23,7 +23,7 @@ function DestinationCard({
       <p>{description}</p>
       {visited ? (
         <button className="btn-1" onClick={handleToggle}>
-          visited
+          Visited
         </button>
       ) : (
         <button className="btn-1" onClick={handleToggle}>
