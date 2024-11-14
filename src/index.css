@@ -79,11 +79,13 @@ nav a:hover {
 }
 main h1 {
   color: white;
+  margin-top: 15px;
 }
 main p {
   text-align: center;
   font-size: medium;
   color: white;
+  margin-top: 20px;
 }
 .logo {
   padding-left: 20px;
