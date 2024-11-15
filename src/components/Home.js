@@ -59,6 +59,20 @@ function Home() {
             />
             <p>Beautiful mountains</p>
           </div>
+          <div className="imgcard">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/01/07/00/09/sun-5895921_1280.jpg"
+              alt="image-10"
+            />
+            <p>Beautiful oceans</p>
+          </div>
+          <div className="imgcard">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/01/24/03/53/city-2004484_1280.jpg"
+              alt="image-11"
+            />
+            <p>great scenery</p>
+          </div>
         </div>
       </main>
       <Contact />
