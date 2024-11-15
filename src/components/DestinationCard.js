@@ -11,16 +11,20 @@ function DestinationCard({
   const [userVisited, setUserVisited] = useState(visited);
 
   function handleUpdateToggle() {
-    const updatedVisited = !userVisited;
-    setUserVisited(updatedVisited);
+    setUserVisited(!userVisited);
 
-    fetch("http://localhost:3000/destinations", {
+    fetch(`http://localhost:3000/destinations/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ visited: updatedVisited }),
-    });
+      body: JSON.stringify({ visited: !userVisited }),
+    })
+      .then((response) => response.json())
+      .then((updatedDestination) => {
+        setUserVisited(updatedDestination.visited);
+      })
+      .catch((error) => console.error(error));
   }
 
   function handleDelete() {
@@ -32,13 +36,13 @@ function DestinationCard({
       <img src={image} alt={name} />
       <h4>{name}</h4>
       <p>{description}</p>
-      {visited ? (
+      {userVisited ? (
         <button className="btn-1" onClick={handleUpdateToggle}>
           Visited
         </button>
       ) : (
         <button className="btn-1" onClick={handleUpdateToggle}>
-          Not visited
+          Not Visited
         </button>
       )}
       <button className="delete-button" onClick={handleDelete}>
