@@ -17,7 +17,7 @@ code {
     monospace;
 }
 .Home {
-  background-color: bisque;
+  background-color: white;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,13 +88,13 @@ nav a:hover {
   height: 35px;
 }
 main h1 {
-  color: white;
+  color: black;
   margin-top: 15px;
 }
 main p {
   text-align: center;
   font-size: medium;
-  color: white;
+  color: black;
   margin-top: 20px;
   align-content: center;
 }
