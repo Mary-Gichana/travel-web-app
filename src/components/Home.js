@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -42,8 +43,25 @@ function Home() {
             />
             <p>Awesome animals</p>
           </div>
+
+          <div className="imgcard">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/02/13/15/03/clouds-2062838_1280.jpg"
+              alt="image-8"
+            />
+            <p>Fascinating mountains</p>
+          </div>
+
+          <div className="imgcard">
+            <img
+              src="https://cdn.pixabay.com/photo/2015/01/21/13/03/table-mountain-606658_1280.jpg"
+              alt="image-9"
+            />
+            <p>Beautiful mountains</p>
+          </div>
         </div>
       </main>
+      <Contact />
     </div>
   );
 }
