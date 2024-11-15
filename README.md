@@ -24,7 +24,7 @@ This is a practical travel Web app built using React JS. The app demonstrates co
 
 ### View Live Site
 
-Visit the deployed application at: Travel Web App
+Visit the deployed application at: https://travel-web-application.netlify.app/
 
 The live site allows you to:
 
