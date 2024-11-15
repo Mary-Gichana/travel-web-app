@@ -5,7 +5,7 @@
       "name": "Bali, Indonesia",
       "image": "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "description": "Beautiful beaches and tropical landscapes",
-      "visited": false
+      "visited": true
     },
     {
       "id": "2",
@@ -26,28 +26,35 @@
       "name": "Paris, France",
       "image": "https://images.pexels.com/photos/1446624/pexels-photo-1446624.jpeg?auto=compress&cs=tinysrgb&w=600",
       "description": "The city of lights and the Eiffel Tower",
-      "visited": false
+      "visited": true
     },
     {
       "id": "5",
       "name": "Maui, USA",
       "image": "https://images.pexels.com/photos/5007331/pexels-photo-5007331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "description": "Scenic drives and beautiful beaches",
-      "visited": false
+      "visited": true
     },
     {
       "id": "3e47",
       "name": "NewYork,USA",
       "image": "https://cdn.pixabay.com/photo/2018/12/14/21/29/sunset-3875817_1280.jpg",
       "description": "Magnificent skyscrapers",
-      "visited": false
+      "visited": true
     },
     {
       "id": "821e",
       "name": "Maldives,SouthWest India",
       "image": "https://cdn.pixabay.com/photo/2016/10/25/12/20/maldives-1768714_1280.jpg",
       "description": "Wide Spectrum of marine Life",
-      "visited": false
+      "visited": true
+    },
+    {
+      "id": "56ee",
+      "name": "Cape Town, South Africa",
+      "image": "https://cdn.pixabay.com/photo/2018/12/14/21/29/sunset-3875817_1280.jpg",
+      "description": "Fascinating boat tours",
+      "visited": true
     }
   ]
 }
