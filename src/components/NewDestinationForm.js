@@ -7,7 +7,11 @@ function NewDestinationForm({ handleAddDestination }) {
     description: "",
   });
   function handleInputChange(e) {
-    setnewDestinationData(e.target.value);
+    const { name, value } = e.target;
+    setnewDestinationData({
+      ...newDestinationData,
+      [name]: value,
+    });
   }
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -23,7 +27,7 @@ function NewDestinationForm({ handleAddDestination }) {
           name: "",
           image: "",
           description: "",
-        }).catch((error) => console.error(error));
+        });
       });
   }
 
