@@ -13,13 +13,16 @@ function DestinationCard({
   function handleUpdateToggle() {
     setUserVisited(!userVisited);
 
-    fetch(`http://localhost:3000/destinations/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ visited: !userVisited }),
-    })
+    fetch(
+      `https://travel-web-app-json-server.onrender.com/destinations/${id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ visited: !userVisited }),
+      }
+    )
       .then((response) => response.json())
       .then((updatedDestination) => {
         setUserVisited(updatedDestination.visited);

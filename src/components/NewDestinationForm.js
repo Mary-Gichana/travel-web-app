@@ -15,7 +15,7 @@ function NewDestinationForm({ handleAddDestination }) {
   }
   function handleFormSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/destinations", {
+    fetch("https://travel-web-app-json-server.onrender.com/destinations", {
       method: "POST",
       headers: { "Content-Type": "Application/JSON" },
       body: JSON.stringify(newDestinationData),

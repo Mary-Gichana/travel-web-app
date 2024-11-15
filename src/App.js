@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   const [destinations, setDestinations] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/destinations")
+    fetch("https://travel-web-app-json-server.onrender.com/destinations")
       .then((response) => response.json())
       .then((data) => setDestinations(data))
       .catch((error) => console.log(error));
@@ -17,9 +17,12 @@ function App() {
     setDestinations([...destinations, newDestination]);
   }
   function handleDeleteDestination(id) {
-    fetch(`http://localhost:3000/destinations/${id}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://travel-web-app-json-server.onrender.com/destinations/${id}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then(() => {
         setDestinations(
           destinations.filter((destination) => destination.id !== id)
