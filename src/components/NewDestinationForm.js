@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function NewDestinationForm({ handleAddDestination }) {
   const [newDestinationData, setnewDestinationData] = useState({
@@ -6,6 +7,9 @@ function NewDestinationForm({ handleAddDestination }) {
     image: "",
     description: "",
   });
+
+  const navigate = useNavigate();
+
   function handleInputChange(e) {
     const { name, value } = e.target;
     setnewDestinationData({
@@ -28,6 +32,7 @@ function NewDestinationForm({ handleAddDestination }) {
           image: "",
           description: "",
         });
+        navigate("/destinations");
       });
   }
 
