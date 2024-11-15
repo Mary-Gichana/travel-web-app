@@ -6,7 +6,7 @@ function Navbar() {
       <nav>
         <p className="logo">Travel</p>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/destinations">Destinations-List</NavLink>
+        <NavLink to="/destinations">Destinations</NavLink>
         <NavLink to="/new-destination">Add Destination</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
