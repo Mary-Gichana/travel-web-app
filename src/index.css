@@ -18,7 +18,7 @@ code {
 }
 .Home {
   min-height: 100vh;
-  background-repeat: no-repeat;
+
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -69,7 +69,6 @@ nav {
   display: flex;
   align-items: center;
 
-  background-color: beige;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -101,13 +100,13 @@ main p {
   margin-bottom: 50px;
 }
 .logo {
-  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 450px;
   font-style: italic;
   font-weight: bold;
   color: black;
   font-size: 20px;
+  margin-top: 40px;
 }
 .new-destination {
   background-image: url(https://cdn.pixabay.com/photo/2018/08/27/19/14/mountain-3635770_1280.jpg);
@@ -193,4 +192,8 @@ main p {
 }
 .contact {
   margin-top: 40px;
+}
+.contact h2 {
+  margin-top: 40px;
+  text-decoration: underline;
 }
