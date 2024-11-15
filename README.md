@@ -63,8 +63,8 @@ If you want to run the project locally, you'll need:
 
 ## Backend API
 
-- Repository:
-- Deployed API:
+- Repository:https://github.com/Mary-Gichana/travel-web-app-json-server
+- Deployed API:https://travel-web-app-json-server.onrender.com/destinations
 
 ## Support and Contact Details
 
