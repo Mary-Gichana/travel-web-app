@@ -17,7 +17,6 @@ code {
     monospace;
 }
 .Home {
-  background-color: white;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +33,7 @@ ul li {
 }
 img {
   width: 250px;
-  height: 200px;
+  height: 150px;
 }
 .cards {
   display: flex;
@@ -47,12 +46,14 @@ img {
   padding: 10px;
   margin-bottom: 10px;
   width: 270px;
-  height: 380px;
+  height: 350px;
   background-color: beige;
 }
 .card p {
   color: black;
-  margin-top: 30px;
+  width: 200px;
+  padding-left: 5px;
+  padding-right: 5;
   margin-bottom: 20px;
 }
 .container {
@@ -68,7 +69,7 @@ nav {
   display: flex;
   align-items: center;
 
-  background-color: white;
+  background-color: beige;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -97,8 +98,7 @@ main p {
   color: black;
   margin-top: 20px;
   align-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-bottom: 50px;
 }
 .logo {
   padding-bottom: 20px;
@@ -110,7 +110,7 @@ main p {
   font-size: 20px;
 }
 .new-destination {
-  background-color: white;
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/27/19/14/mountain-3635770_1280.jpg);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,7 +185,12 @@ main p {
   margin-left: 50px;
   margin-right: 50px;
 }
-.imgcard {
-  padding-left: 0;
-  padding-right: 0;
+
+.imgcard img {
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+.contact {
+  margin-top: 40px;
 }
