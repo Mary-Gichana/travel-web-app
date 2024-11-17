@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function NewDestinationForm({ handleAddDestination }) {
   const [newDestinationData, setnewDestinationData] = useState({
@@ -38,6 +39,7 @@ function NewDestinationForm({ handleAddDestination }) {
 
   return (
     <div className="new-destination">
+      <Navbar />
       <h2>New Destination</h2>
 
       <div className="new-destination-form">
